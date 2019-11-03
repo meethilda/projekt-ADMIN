@@ -1,0 +1,11 @@
+// Function for sidebar/content width
+$sidebar: 20%;
+$content: 80%;
+
+@function LR($placement) {
+    @if($placement == 'left') {
+        @return $sidebar;
+    } @else {
+        @return $content;
+    }
+}

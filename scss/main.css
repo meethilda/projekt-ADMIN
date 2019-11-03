@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+  border-radius: 5px;
+  font-size: 0.8em;
+  padding: 5px 10px;
+  margin: 5px 0;
+  display: inline-block;
+}
+
+.btn.error {
+  background: red;
+  color: white;
+}
+
+.btn.error:hover {
+  background: #990000;
+}
+
+.btn.change {
+  background: #303d38;
+  color: #fff;
+}
+
+.btn.change:hover {
+  background: #5d766c;
+}
+
+.btn.success {
+  background: green;
+  color: #fff;
+}
+
+.btn.success:hover {
+  background: #004d00;
+}
+
+.msg-json {
+  color: #d6d6d6;
+  font-style: italic;
+  position: relative;
+}
+
+.msg-json::before {
+  content: '! ';
+  font-size: 1.5em;
+  color: #efefef;
+  font-weight: bold;
+  font-family: 'Arial Black';
+}
+
+header .top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  background: #efefef;
+}
+
+header .top-menu > * {
+  padding: 5px 10px;
+  font-size: 0.8em;
+}
+
+header .top-menu a {
+  background: #990000;
+  color: #fff;
+}
+
+header .top-menu a:hover {
+  background: #660000;
+}
+
+header h1 {
+  padding: 5px 20px;
+  background: #303d38;
+  color: #c2ccc5;
+}
+
+.wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 20px 0;
+  height: 100%;
+  background: #c2ccc5;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul a {
+  display: block;
+  padding: 5px 10px;
+  color: #efefef;
+}
+
+.sidebar ul a:hover {
+  background: #b4c0b8;
+  color: #303d38;
+}
+
+.sidebar ul a.active {
+  background: #fcfcfc;
+  color: #3d3d3d;
+}
+
+.content {
+  width: 80%;
+  padding: 20px;
+}
+
+.content h2 {
+  color: #303d38;
+  padding-bottom: 10px;
+}
+
+.adds {
+  padding: 20px 5px;
+  border-bottom: 5px solid #c2ccc5;
+}
+
+.adds p span {
+  font-weight: bold;
+  color: #303d38;
+}
+
+.adds .add-div p {
+  margin: 5px 0;
+}
+
+.form {
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.form.add-form {
+  border: #efefef 1px solid;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.form input {
+  border: 1px solid #c2ccc5;
+  font-size: 0.8em;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.form input[type="text"] {
+  min-width: 200px;
+}
+
+.form input[type="button"] {
+  background: #c2ccc5;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+.welcome {
+  font-size: 3em;
+  color: #c2ccc5;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.wrap #login {
+  padding: 10px;
+}
+
+.wrap #login p {
+  padding: 10px;
+}
+
+.wrap .form {
+  margin: 0 auto;
+  display: block;
+  max-width: 300px;
+  width: 100%;
+}
+
+.wrap .form input {
+  width: 100%;
+  margin: 0;
+  display: block;
+  margin: 10px 0;
+}
+
+#profile {
+  padding: 10px 0;
+}
+
+#profile > p {
+  padding: 5px 0;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #efefef;
+}
+
+@media all and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
